@@ -50,8 +50,19 @@ img {
 	border: 2px var(--primary-color) solid;
 }
 
+nav,
+footer {
+	background-color: var(--primary-color);
+	color: black;
+}
+
 a:hover {
 	color: var(--secondary-color);
+}
+
+.site-footer {
+	margin-top: 20px;
+	padding: 20px;
 }
 
 .navigation-links {
@@ -135,7 +146,11 @@ a:hover {
 	padding: 10px;
 }
 
-@media (max-width: 576) {
+.btn {
+	color: black;
+}
+
+@media (max-width: 576px) {
 	.col {
 		text-align: center;
 		margin: 0 auto;
@@ -143,5 +158,26 @@ a:hover {
 
 	img {
 		margin-top: 30px;
+	}
+
+	.primary-link {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		color: black;
+	}
+
+	p {
+		font-size: 12px;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		text-align: center;
+		font-size: 25px;
 	}
 }
